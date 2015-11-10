@@ -7,15 +7,7 @@ import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 import java.lang.System;
 
-// import org.junit.Before;
-
 public class Deliverable4 {
-	
-	public static void main(String[] args) {
-		//JUnitCore junit = new JUnitCore();
-		//Result result = junit.run(sortWholeArray());
-
-	}
 
 	public int[] randomArray() {
 		Random rand = new Random();
@@ -35,7 +27,7 @@ public class Deliverable4 {
 
 	}
 
-	//
+	// Ensures that arrays are properly sorted when going through Arrays.sort()
 	@Test
 	public void sortWholeArray() {
 
@@ -52,6 +44,7 @@ public class Deliverable4 {
 		}
 	}
 
+	// Ensures that array subsets are properly sorted when going through Arrays.sort()
 	@Test
 	public void sortPartOfArray() {
 		Random rando = new Random();
@@ -81,7 +74,7 @@ public class Deliverable4 {
 	///
 	// Each time an array is randomly generated, a copy of that array is made.
 	// Both of the arrays are then sorted.
-	// The test is to ensure that two arrays with the same contents are sorted similarly.
+	// Ensures that two arrays with the same contents are sorted similarly.
 	@Test
 	public void arraySortedTwice() {
 
